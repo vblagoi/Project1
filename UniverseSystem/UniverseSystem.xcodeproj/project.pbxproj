@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B997F2A325C2A07D0071CBB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997F2A225C2A07D0071CBB0 /* AppDelegate.swift */; };
+		B997F2A525C2A07D0071CBB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997F2A425C2A07D0071CBB0 /* SceneDelegate.swift */; };
+		B997F2AA25C2A07D0071CBB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B997F2A825C2A07D0071CBB0 /* Main.storyboard */; };
+		B997F2AC25C2A0810071CBB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B997F2AB25C2A0810071CBB0 /* Assets.xcassets */; };
+		B997F2AF25C2A0810071CBB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B997F2AD25C2A0810071CBB0 /* LaunchScreen.storyboard */; };
+		B997F2BA25C2A1640071CBB0 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997F2B925C2A1640071CBB0 /* Protocols.swift */; };
+		B997F2BD25C2A1E20071CBB0 /* Universe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997F2BC25C2A1E20071CBB0 /* Universe.swift */; };
+		B997F2C025C2A21A0071CBB0 /* Galaxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997F2BF25C2A21A0071CBB0 /* Galaxy.swift */; };
+		B997F2C325C2A2740071CBB0 /* StarPlanetarySystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997F2C225C2A2740071CBB0 /* StarPlanetarySystem.swift */; };
+		B997F2C625C2A2A60071CBB0 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997F2C525C2A2A60071CBB0 /* Star.swift */; };
+		B997F2C925C2A31E0071CBB0 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997F2C825C2A31E0071CBB0 /* Planet.swift */; };
+		B997F2CC25C2B6920071CBB0 /* UniverseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997F2CB25C2B6920071CBB0 /* UniverseViewController.swift */; };
+		B997F2D125C2C7E60071CBB0 /* UniverseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997F2D025C2C7E60071CBB0 /* UniverseCollectionViewCell.swift */; };
+		B997F2D425C2CA230071CBB0 /* GalaxyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997F2D325C2CA230071CBB0 /* GalaxyViewController.swift */; };
+		B997F2D825C345B00071CBB0 /* GalaxyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997F2D725C345B00071CBB0 /* GalaxyCollectionViewCell.swift */; };
+		B997F2DD25C351300071CBB0 /* StarPlanetarySystemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997F2DC25C351300071CBB0 /* StarPlanetarySystemViewController.swift */; };
+		B997F2E025C35E580071CBB0 /* StarPlanetarySystemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997F2DF25C35E580071CBB0 /* StarPlanetarySystemCollectionViewCell.swift */; };
+		B997F2E525C35F9C0071CBB0 /* PlanetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997F2E425C35F9C0071CBB0 /* PlanetCollectionViewCell.swift */; };
+		B997F2E825C35FBE0071CBB0 /* PlanetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997F2E725C35FBE0071CBB0 /* PlanetViewController.swift */; };
+		B997F2F425C3BF250071CBB0 /* BlackHole.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997F2F325C3BF250071CBB0 /* BlackHole.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B997F29F25C2A07D0071CBB0 /* UniverseSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniverseSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B997F2A225C2A07D0071CBB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B997F2A425C2A07D0071CBB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B997F2A925C2A07D0071CBB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B997F2AB25C2A0810071CBB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B997F2AE25C2A0810071CBB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B997F2B025C2A0810071CBB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B997F2B925C2A1640071CBB0 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		B997F2BC25C2A1E20071CBB0 /* Universe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Universe.swift; sourceTree = "<group>"; };
+		B997F2BF25C2A21A0071CBB0 /* Galaxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Galaxy.swift; sourceTree = "<group>"; };
+		B997F2C225C2A2740071CBB0 /* StarPlanetarySystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarPlanetarySystem.swift; sourceTree = "<group>"; };
+		B997F2C525C2A2A60071CBB0 /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
+		B997F2C825C2A31E0071CBB0 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		B997F2CB25C2B6920071CBB0 /* UniverseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniverseViewController.swift; sourceTree = "<group>"; };
+		B997F2D025C2C7E60071CBB0 /* UniverseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniverseCollectionViewCell.swift; sourceTree = "<group>"; };
+		B997F2D325C2CA230071CBB0 /* GalaxyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalaxyViewController.swift; sourceTree = "<group>"; };
+		B997F2D725C345B00071CBB0 /* GalaxyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalaxyCollectionViewCell.swift; sourceTree = "<group>"; };
+		B997F2DC25C351300071CBB0 /* StarPlanetarySystemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarPlanetarySystemViewController.swift; sourceTree = "<group>"; };
+		B997F2DF25C35E580071CBB0 /* StarPlanetarySystemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarPlanetarySystemCollectionViewCell.swift; sourceTree = "<group>"; };
+		B997F2E425C35F9C0071CBB0 /* PlanetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCollectionViewCell.swift; sourceTree = "<group>"; };
+		B997F2E725C35FBE0071CBB0 /* PlanetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetViewController.swift; sourceTree = "<group>"; };
+		B997F2F325C3BF250071CBB0 /* BlackHole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackHole.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B997F29C25C2A07D0071CBB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B997F29625C2A07D0071CBB0 = {
+			isa = PBXGroup;
+			children = (
+				B997F2A125C2A07D0071CBB0 /* UniverseSystem */,
+				B997F2A025C2A07D0071CBB0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B997F2A025C2A07D0071CBB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B997F29F25C2A07D0071CBB0 /* UniverseSystem.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B997F2A125C2A07D0071CBB0 /* UniverseSystem */ = {
+			isa = PBXGroup;
+			children = (
+				B997F2B825C2A0E60071CBB0 /* Models */,
+				B997F2B725C2A0D10071CBB0 /* Protocols */,
+				B997F2A225C2A07D0071CBB0 /* AppDelegate.swift */,
+				B997F2A425C2A07D0071CBB0 /* SceneDelegate.swift */,
+				B997F2CB25C2B6920071CBB0 /* UniverseViewController.swift */,
+				B997F2D025C2C7E60071CBB0 /* UniverseCollectionViewCell.swift */,
+				B997F2D325C2CA230071CBB0 /* GalaxyViewController.swift */,
+				B997F2D725C345B00071CBB0 /* GalaxyCollectionViewCell.swift */,
+				B997F2DC25C351300071CBB0 /* StarPlanetarySystemViewController.swift */,
+				B997F2DF25C35E580071CBB0 /* StarPlanetarySystemCollectionViewCell.swift */,
+				B997F2E725C35FBE0071CBB0 /* PlanetViewController.swift */,
+				B997F2E425C35F9C0071CBB0 /* PlanetCollectionViewCell.swift */,
+				B997F2A825C2A07D0071CBB0 /* Main.storyboard */,
+				B997F2AB25C2A0810071CBB0 /* Assets.xcassets */,
+				B997F2AD25C2A0810071CBB0 /* LaunchScreen.storyboard */,
+				B997F2B025C2A0810071CBB0 /* Info.plist */,
+			);
+			path = UniverseSystem;
+			sourceTree = "<group>";
+		};
+		B997F2B725C2A0D10071CBB0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B997F2B925C2A1640071CBB0 /* Protocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B997F2B825C2A0E60071CBB0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B997F2BC25C2A1E20071CBB0 /* Universe.swift */,
+				B997F2BF25C2A21A0071CBB0 /* Galaxy.swift */,
+				B997F2C225C2A2740071CBB0 /* StarPlanetarySystem.swift */,
+				B997F2C525C2A2A60071CBB0 /* Star.swift */,
+				B997F2C825C2A31E0071CBB0 /* Planet.swift */,
+				B997F2F325C3BF250071CBB0 /* BlackHole.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B997F29E25C2A07D0071CBB0 /* UniverseSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B997F2B325C2A0810071CBB0 /* Build configuration list for PBXNativeTarget "UniverseSystem" */;
+			buildPhases = (
+				B997F29B25C2A07D0071CBB0 /* Sources */,
+				B997F29C25C2A07D0071CBB0 /* Frameworks */,
+				B997F29D25C2A07D0071CBB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UniverseSystem;
+			productName = UniverseSystem;
+			productReference = B997F29F25C2A07D0071CBB0 /* UniverseSystem.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B997F29725C2A07D0071CBB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					B997F29E25C2A07D0071CBB0 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = B997F29A25C2A07D0071CBB0 /* Build configuration list for PBXProject "UniverseSystem" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B997F29625C2A07D0071CBB0;
+			productRefGroup = B997F2A025C2A07D0071CBB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B997F29E25C2A07D0071CBB0 /* UniverseSystem */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B997F29D25C2A07D0071CBB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B997F2AF25C2A0810071CBB0 /* LaunchScreen.storyboard in Resources */,
+				B997F2AC25C2A0810071CBB0 /* Assets.xcassets in Resources */,
+				B997F2AA25C2A07D0071CBB0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B997F29B25C2A07D0071CBB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B997F2C025C2A21A0071CBB0 /* Galaxy.swift in Sources */,
+				B997F2A325C2A07D0071CBB0 /* AppDelegate.swift in Sources */,
+				B997F2E525C35F9C0071CBB0 /* PlanetCollectionViewCell.swift in Sources */,
+				B997F2E025C35E580071CBB0 /* StarPlanetarySystemCollectionViewCell.swift in Sources */,
+				B997F2DD25C351300071CBB0 /* StarPlanetarySystemViewController.swift in Sources */,
+				B997F2D825C345B00071CBB0 /* GalaxyCollectionViewCell.swift in Sources */,
+				B997F2C925C2A31E0071CBB0 /* Planet.swift in Sources */,
+				B997F2BD25C2A1E20071CBB0 /* Universe.swift in Sources */,
+				B997F2E825C35FBE0071CBB0 /* PlanetViewController.swift in Sources */,
+				B997F2CC25C2B6920071CBB0 /* UniverseViewController.swift in Sources */,
+				B997F2C325C2A2740071CBB0 /* StarPlanetarySystem.swift in Sources */,
+				B997F2F425C3BF250071CBB0 /* BlackHole.swift in Sources */,
+				B997F2D125C2C7E60071CBB0 /* UniverseCollectionViewCell.swift in Sources */,
+				B997F2D425C2CA230071CBB0 /* GalaxyViewController.swift in Sources */,
+				B997F2A525C2A07D0071CBB0 /* SceneDelegate.swift in Sources */,
+				B997F2BA25C2A1640071CBB0 /* Protocols.swift in Sources */,
+				B997F2C625C2A2A60071CBB0 /* Star.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B997F2A825C2A07D0071CBB0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B997F2A925C2A07D0071CBB0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B997F2AD25C2A0810071CBB0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B997F2AE25C2A0810071CBB0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B997F2B125C2A0810071CBB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B997F2B225C2A0810071CBB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B997F2B425C2A0810071CBB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UniverseSystem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vblagoi.UniverseSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B997F2B525C2A0810071CBB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UniverseSystem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vblagoi.UniverseSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B997F29A25C2A07D0071CBB0 /* Build configuration list for PBXProject "UniverseSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B997F2B125C2A0810071CBB0 /* Debug */,
+				B997F2B225C2A0810071CBB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B997F2B325C2A0810071CBB0 /* Build configuration list for PBXNativeTarget "UniverseSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B997F2B425C2A0810071CBB0 /* Debug */,
+				B997F2B525C2A0810071CBB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B997F29725C2A07D0071CBB0 /* Project object */;
+}
