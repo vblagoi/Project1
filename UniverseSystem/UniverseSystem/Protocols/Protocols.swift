@@ -9,6 +9,10 @@ import Foundation
 
 protocol Handler: class {
 
+    /*
+     Mentor's comment:
+     Unused code, as well as the nextHandler property.
+     */
     @discardableResult
     func setNext(handler: Handler) -> Handler
 
@@ -24,6 +28,11 @@ extension Handler {
         return handler
     }
 
+    /*
+     Mentor's comment:
+     It's not a good idea to add such default empty implementations for a protocol. By doing so you partly break the
+     purpose of creating one.
+     */
     func handle(request: Double){
     }
 }

@@ -10,6 +10,10 @@ import Foundation
 
 class Galaxy: StarDelegate {
     
+    /*
+     Mentor's comment:
+     Don't forget about access control modifiers. Not every property or method should be exposed to the outside world.
+     */
     var nextHandler: Handler?
     var delegate: GalaxyDelegate?
     let type: TypeGalaxy
@@ -34,12 +38,23 @@ class Galaxy: StarDelegate {
         print("Create one more StarPlanetSystem")
     }
     
+    /*
+     Mentor's comment:
+     Unused code
+     */
     func collapse(anotherGalaxy: Galaxy) -> Galaxy {
         // Код для зіткнення галактик і створення однієї
         return self
     }
     
     func blackHoleDidAppear() {
+        /*
+         Mentor's comment:
+         Removing all planetes from a star-planetary system and leaving the star in place as a black hole looks
+         like quick and dirty solution. Accoding to the requirements a star-planetary system ceases to exist
+         when it's host star becomes a black hole. And this situation must be handled correctly when a view controller
+         displaying the star-planetary system is presented to user.
+         */
         print("Black Hole did appear!")
     }
 }

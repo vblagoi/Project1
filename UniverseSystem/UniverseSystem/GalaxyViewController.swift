@@ -63,6 +63,11 @@ extension GalaxyViewController: UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = storyboard?.instantiateViewController(identifier: "StarPlanetarySystemViewController") as! StarPlanetarySystemViewController
+        /*
+         Mentor's comment:
+         It's not great practice to access the properties of an another object. You should keep them private
+         and accessible via methods. I see this code be refactored to something like `galaxy?.starSystem(at: indexPath.row)`
+         */
         vc.system = galaxy?.starPlanetSystems[indexPath.row]
         self.navigationController?.pushViewController(vc, animated: true)
     }

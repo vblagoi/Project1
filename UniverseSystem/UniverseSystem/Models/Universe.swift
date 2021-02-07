@@ -24,6 +24,10 @@ class Universe {
     }
     
     private func startTimer() {
+        /*
+         Mentor's comment:
+         According to the requirements the timer should execute code on a background thread
+         */
         timer = Timer.scheduledTimer(timeInterval: 10.0, target: self, selector: #selector(didRecieveTime), userInfo: nil, repeats: true)
     }
     
@@ -38,6 +42,11 @@ class Universe {
     @objc private func didRecieveTime() {
         age += 10
         if timeToColapse() {
+            /*
+             Mentor's comment:
+             See my comment to `randomGalaxyForCollapse`. This is the result of using an inappropriate data structure
+             as a return type.
+             */
             let randomGalaxysIndexes = randomGalaxyForCollapse()
             if randomGalaxysIndexes!.count > 1 {
                 colapseGalaxys(first: randomGalaxysIndexes![0], second: randomGalaxysIndexes![1])
@@ -48,6 +57,10 @@ class Universe {
     }
     
     func timeToColapse() -> Bool {
+        /**
+         Mentor's comment:
+         Not a mistake, but you could just write `age % 30 == 0` 🙂
+         */
         if (age % 30 == 0) {
             return true
         } else {
@@ -61,6 +74,12 @@ class Universe {
         print("Create one more Galaxy")
     }
     
+    /*
+     Mentor's comment:
+     You can return an optional tuple here: `-> (Galaxy, Galaxy)?`
+     This makes your code less error-prone by using the type system of Swift to eliminate even the possibility
+     of bugs.
+     */
     private func randomGalaxyForCollapse() -> [Int]? {
         let arrayIndexes = Array(0...(galaxys.count - 1))
         let filteredIndexes = arrayIndexes.filter{ index in

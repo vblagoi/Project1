@@ -67,6 +67,13 @@ extension UniverseViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        /*
+         Mentor's comment:
+         I like that you kept everything simple and straightforward, this helps a lot
+         to understand and maintain your code 👍. However I'd rather moved the code below to a coordinator
+         objct. Google about the coordinator pattern for iOS navigation. Applying this pattern helps
+         avoiding the Massive View Controller problem.
+         */
         let vc = storyboard?.instantiateViewController(identifier: "GalaxyViewController") as! GalaxyViewController
         vc.galaxy = universe.galaxys[indexPath.row]
         self.navigationController?.pushViewController(vc, animated: true)
