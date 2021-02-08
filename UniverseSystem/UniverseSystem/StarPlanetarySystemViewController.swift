@@ -52,6 +52,11 @@ class StarPlanetarySystemViewController: UIViewController {
         starType.translatesAutoresizingMaskIntoConstraints = false
         starEvolveLevel.translatesAutoresizingMaskIntoConstraints = false
         
+        /*
+         Mentor's comment:
+         It's better to create a dedicated class for a view you want to configure in a way you do below.
+         Otherwise your view controller becomes very massive (the famous Massive View Controller issue).
+         */
         starType.textColor = .white
         starType.font = UIFont.systemFont(ofSize: 20.0)
         starEvolveLevel.textColor = .white

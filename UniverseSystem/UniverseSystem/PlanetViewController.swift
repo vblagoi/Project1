@@ -49,6 +49,11 @@ extension PlanetViewController: UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PlanetCollectionViewCell.reuseID, for: indexPath) as! PlanetCollectionViewCell
+        /*
+         Mentor's comment:
+         Typically you shouldn't touch view's layout in this method, this dramatically reduces performance of scroll
+         by breaking the whole idea of reusing cells' views. And setting a corner radius definitely doesn't belong here.
+         */
         cell.layer.cornerRadius = 10
         return cell
     }
