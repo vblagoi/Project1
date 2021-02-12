@@ -31,6 +31,8 @@ class Universe {
         
         for galaxy in galaxys {
             galaxy.handle(request: request)
+            galaxy.radiusForBlackHole = radiusForBlackHole
+            galaxy.weightForBlackHole = weightForBlackHole
         }
 
     }
@@ -56,7 +58,8 @@ class Universe {
     }
     
     private func createGalaxy() {
-        galaxys.append(Galaxy(radiusForBlackHole: radiusForBlackHole, weightForBlackHole: weightForBlackHole))
+        let newGalaxy = Factory.defaultFactory.createGalaxy(type: TypeGalaxy.random())
+        galaxys.append(newGalaxy)
         delegate?.galaxyDidAppear()
         print("Create one more Galaxy")
     }

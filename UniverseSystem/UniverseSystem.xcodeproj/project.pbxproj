@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B97C663725D5FC5400A95E34 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97C663625D5FC5400A95E34 /* Factory.swift */; };
 		B997F2A325C2A07D0071CBB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997F2A225C2A07D0071CBB0 /* AppDelegate.swift */; };
 		B997F2A525C2A07D0071CBB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B997F2A425C2A07D0071CBB0 /* SceneDelegate.swift */; };
 		B997F2AA25C2A07D0071CBB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B997F2A825C2A07D0071CBB0 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B97C663625D5FC5400A95E34 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		B997F29F25C2A07D0071CBB0 /* UniverseSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniverseSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B997F2A225C2A07D0071CBB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B997F2A425C2A07D0071CBB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B97C663A25D5FDB100A95E34 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				B97C663625D5FC5400A95E34 /* Factory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 		B997F29625C2A07D0071CBB0 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +96,7 @@
 			children = (
 				B997F2B825C2A0E60071CBB0 /* Models */,
 				B997F2B725C2A0D10071CBB0 /* Protocols */,
+				B97C663A25D5FDB100A95E34 /* Factory */,
 				B997F2A225C2A07D0071CBB0 /* AppDelegate.swift */,
 				B997F2A425C2A07D0071CBB0 /* SceneDelegate.swift */,
 				B997F2CB25C2B6920071CBB0 /* UniverseViewController.swift */,
@@ -209,6 +220,7 @@
 				B997F2F425C3BF250071CBB0 /* BlackHole.swift in Sources */,
 				B997F2D125C2C7E60071CBB0 /* UniverseCollectionViewCell.swift in Sources */,
 				B997F2D425C2CA230071CBB0 /* GalaxyViewController.swift in Sources */,
+				B97C663725D5FC5400A95E34 /* Factory.swift in Sources */,
 				B997F2A525C2A07D0071CBB0 /* SceneDelegate.swift in Sources */,
 				B997F2BA25C2A1640071CBB0 /* Protocols.swift in Sources */,
 				B997F2C625C2A2A60071CBB0 /* Star.swift in Sources */,

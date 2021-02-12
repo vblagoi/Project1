@@ -16,8 +16,8 @@ class Planet: Handler {
     let radius: Int
     var satellites: [Satellite] = []
     
-    init() {
-        self.type = PlanetType.random()
+    init(type: PlanetType) {
+        self.type = type
         self.temperature = Int.random(in: 1...100)
         self.radius = Int.random(in: 1...100)
         self.weight = Int.random(in: 1...100)
@@ -27,7 +27,7 @@ class Planet: Handler {
     func newSatellites() {
         let satellitesCount = Int.random(in: 0...5)
         while satellites.count != satellitesCount {
-            let satellite = Satellite()
+            let satellite = Factory.defaultFactory.createSatellit()
             self.satellites.append(satellite)
             print("Create one more Satellite")
         }

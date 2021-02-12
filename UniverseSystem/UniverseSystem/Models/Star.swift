@@ -17,22 +17,20 @@ class Star: Handler {
     let radius: Int
     let luminosity: Int
     var age: Int
-    let radiusForBlackHole: Int
-    let weightForBlackHole: Int
+    var radiusForBlackHole: Int? = nil
+    var weightForBlackHole: Int? = nil
     
     weak var delegate: StarDelegate?
     
     
     
-    init(radiusForBlackHole: Int, weightForBlackHole: Int) {
-        self.radiusForBlackHole = radiusForBlackHole
-        self.weightForBlackHole = weightForBlackHole
+    init(type: TypeStar) {
         self.weight = Int.random(in: 1...100)
         self.temperature = Int.random(in: 1...100)
         self.radius = Int.random(in: 1...100)
         self.luminosity = Int.random(in: 1...100)
         self.age = 0
-        self.type = TypeStar.random()
+        self.type = type
         self.evolveLevel = .youngStar
     }
     
@@ -63,10 +61,12 @@ class Star: Handler {
     }
     
     private func finalEvolve() {
-        if radius > radiusForBlackHole && weight > weightForBlackHole {
-            evolveLevel = .blackHole
-        } else {
-            evolveLevel = .denseDwarf
+        if let _ = radiusForBlackHole, let _ = weightForBlackHole {
+            if radius > radiusForBlackHole! && weight > weightForBlackHole! {
+                evolveLevel = .blackHole
+            } else {
+                evolveLevel = .denseDwarf
+            }
         }
     }
     

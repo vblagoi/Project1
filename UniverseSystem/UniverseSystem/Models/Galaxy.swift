@@ -16,27 +16,20 @@ class Galaxy: StarDelegate {
     var age: Int
     var starPlanetSystems: [StarPlanetarySystem] = []
     var weight = Int.random(in: 1...100)
-    let radiusForBlackHole: Int
-    let weightForBlackHole: Int
+    var radiusForBlackHole: Int?
+    var weightForBlackHole: Int?
     
-    init(radiusForBlackHole: Int, weightForBlackHole: Int) {
-        self.radiusForBlackHole = radiusForBlackHole
-        self.weightForBlackHole = weightForBlackHole
-        self.type = TypeGalaxy.random()
+    init(type: TypeGalaxy) {
+        self.type = type
         self.age = 0
     }
     
     func createStarPlanetSystem() {
-        let system = StarPlanetarySystem(radiusForBlackHole: radiusForBlackHole, weightForBlackHole: weightForBlackHole)
+        let system = Factory.defaultFactory.createStarPlanetarySystem()
         
         starPlanetSystems.append(system)
         delegate?.systemDidAppear()
         print("Create one more StarPlanetSystem")
-    }
-    
-    func collapse(anotherGalaxy: Galaxy) -> Galaxy {
-        // Код для зіткнення галактик і створення однієї
-        return self
     }
     
     func blackHoleDidAppear() {
@@ -50,6 +43,8 @@ extension Galaxy: Handler {
         age += 10
         for system in starPlanetSystems {
             system.handle(request: request)
+            system.radiusForBlackHole = radiusForBlackHole
+            system.weightForBlackHole = weightForBlackHole
         }
         createStarPlanetSystem()
     }

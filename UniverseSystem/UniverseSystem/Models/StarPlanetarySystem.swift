@@ -14,23 +14,23 @@ class StarPlanetarySystem: Handler, StarDelegate {
     weak var delegate: StarPlanetarySystemDelegate?
     let star: Star
     var planets: [Planet] = []
-    let radiusForBlackHole: Int
-    let weightForBlackHole: Int
+    var radiusForBlackHole: Int? = nil
+    var weightForBlackHole: Int? = nil
     
-    init(radiusForBlackHole: Int, weightForBlackHole: Int) {
-        self.radiusForBlackHole = radiusForBlackHole
-        self.weightForBlackHole = weightForBlackHole
-        self.star = Star(radiusForBlackHole: radiusForBlackHole, weightForBlackHole: weightForBlackHole)
+    init() {
+        self.star = Factory.defaultFactory.createStar(type: TypeStar.random())
     }
     
     func handle(request: Double) {
         star.handle(request: request)
+        star.radiusForBlackHole = radiusForBlackHole
+        star.weightForBlackHole = weightForBlackHole
         createPlanet()
     }
     
     func createPlanet() {
         guard planets.count < 9 else { return }
-        let planet = Planet()
+        let planet = Factory.defaultFactory.createPlanet(type: PlanetType.random())
         planets.append(planet)
         delegate?.planetDidAppear()
         print("Create one more Planet")
